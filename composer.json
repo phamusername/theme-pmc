@@ -1,0 +1,32 @@
+{
+    "name": "ggg3/theme-pmc",
+    "description": "KKPhim pmc theme",
+    "type": "library",
+    "authors": [
+        {
+            "name": "ggg3",
+            "email": "admin@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^6|^7|^8",
+        "ckfinder/ckfinder-laravel-package": "v3.5.2.1",
+        "haiau009/kkphim-core": "^1.1.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "KKPhim\\ThemePmc\\": "src/",
+            "KKPhim\\ThemePmc\\Database\\Factories\\": "database/factories/",
+            "KKPhim\\ThemePmc\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "KKPhim\\ThemePmc\\ThemePmcServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
